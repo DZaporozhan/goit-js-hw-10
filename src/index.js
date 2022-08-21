@@ -33,7 +33,7 @@ function inputCountryName(evt) {
           'Too many matches found. Please enter a more specific name.'
         );
       }
-      if (countries.length > 2 && countries.length < 10) {
+      if (countries.length >= 2 && countries.length <= 10) {
         return rendorList(countries);
       }
       if (countries.length === 1) {
